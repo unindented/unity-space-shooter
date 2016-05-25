@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>%UNITY_WEB_NAME%</title>
+
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="icon" href="TemplateData/favicon.ico" />
+  </head>
+
+  <body>
+    <div class="container">
+      <canvas id="canvas" class="canvas" width="%UNITY_WIDTH%px" height="%UNITY_HEIGHT%px"></canvas>
+
+      <div class="loading">
+        <div class="loading-bar">
+          <div class="loading-bar-inner"></div>
+        </div>
+      </div>
+
+      <button class="fullscreen">
+        <svg class="fullscreen-icon" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+          <path d="M118.792 46.368c1.056 1.055 2.303 1.583 3.746 1.583.665 0 1.36-.138 2.082-.416 2.165-.943 3.246-2.58 3.246-4.91V5.328c0-1.444-.526-2.693-1.582-3.747C125.23.528 123.98 0 122.538 0H85.244c-2.33 0-3.967 1.11-4.912 3.33-.942 2.165-.555 4.08 1.166 5.744L93.485 21.06 63.933 50.615 34.38 21.06 46.37 9.074c1.72-1.664 2.11-3.58 1.166-5.743C46.59 1.11 44.954 0 42.624 0H5.328C3.884 0 2.635.527 1.58 1.582.527 2.636 0 3.885 0 5.328v37.294c0 2.33 1.11 3.968 3.33 4.912.666.276 1.332.416 1.998.416 1.443 0 2.69-.528 3.746-1.582L21.06 34.382l29.553 29.552-29.552 29.55L9.075 81.497c-1.665-1.72-3.58-2.108-5.744-1.167C1.11 81.275 0 82.913 0 85.245v37.293c0 1.443.527 2.69 1.582 3.746 1.055 1.054 2.304 1.58 3.747 1.58h37.293c2.33 0 3.968-1.11 4.91-3.328.944-2.165.556-4.08-1.165-5.745L34.38 106.806l29.553-29.553 29.552 29.554-11.988 11.986c-1.72 1.665-2.107 3.58-1.165 5.744.944 2.22 2.582 3.33 4.913 3.33h37.294c1.442 0 2.69-.528 3.745-1.582 1.053-1.054 1.58-2.303 1.58-3.746V85.245c0-2.33-1.08-3.97-3.247-4.914-2.274-.94-4.216-.554-5.827 1.17l-11.984 11.984-29.553-29.55 29.553-29.553 11.986 11.988z" fill="#000" fill-rule="evenodd"/>
+        </svg>
+      </button>
+    </div>
+
+    <script src="TemplateData/FullscreenToggle.js"></script>
+    <script src="TemplateData/UnityProgress.js"></script>
+    %UNITY_WEBGL_LOADER_GLUE%
+  </body>
+</html>

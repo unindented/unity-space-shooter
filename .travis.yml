@@ -1,0 +1,8 @@
+language: objective-c
+osx_image: xcode7.3
+
+install:
+  - make install_osx
+script:
+  - make build_web
+  - make cat_log

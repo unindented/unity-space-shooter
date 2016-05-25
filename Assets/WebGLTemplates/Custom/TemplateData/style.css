@@ -1,0 +1,86 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+.container,
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  height: 100%;
+  font: 24px Helvetica, Arial, sans-serif;
+}
+
+.container {
+  position: relative;
+  background-color: #eee;
+}
+
+.loading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.container.is-finished .loading {
+  display: none;
+}
+
+.loading-bar,
+.loading-bar-inner {
+  border-radius: 4px;
+}
+
+.loading-bar {
+  width: 300px;
+  height: 15px;
+  margin-top: 50px;
+  background-color: #ddd;
+}
+
+.loading-bar-inner {
+  width: 0;
+  height: 100%;
+  background-color: #aaa;
+  transition: width .2s ease-in-out;
+}
+
+.fullscreen {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  display: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  line-height: inherit;
+  color: inherit;
+  text-align: inherit;
+  cursor: inherit;
+  background: none;
+  border: none;
+}
+.container.is-finished .fullscreen {
+  display: block;
+}
+
+.fullscreen-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.fullscreen-icon path {
+  fill: #ddd;
+}
